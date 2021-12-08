@@ -31,9 +31,11 @@ const Start = ({ onQuizStart }) => {
           if(response.data.message){
             window.alert(response.data.message)
           }
+          else{
             console.log(response.data.id)
             sessionStorage.setItem('userId',response.data.id)
             window.alert('You can now start the test!')
+          }
         });
 }
   return(
