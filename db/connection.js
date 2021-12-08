@@ -3,7 +3,7 @@ const Sequelize = require('sequelize')
 const db = new Sequelize({
     
     dialect:'sqlite',
-    storage:__dirname + '/quizitdb.db'
+    storage:__dirname + '/coepdquizit.db'
 })
 
 const Model = Sequelize.Model
