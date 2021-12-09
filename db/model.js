@@ -15,7 +15,7 @@ candidates.init({
         allowNull: false
     },
     phone: {
-        type: DataTypes.STRING(12),
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     
@@ -34,7 +34,7 @@ scoreSheet.init({
         allowNull: false
     },
     phone: {
-        type: DataTypes.STRING(12),
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     
