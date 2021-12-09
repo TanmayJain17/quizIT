@@ -43,6 +43,7 @@ route.get('/', async (req, res)=>{
         {header: 'Q19', key: 'q19marks', width: 5},
         {header: 'Q20', key: 'q20marks', width: 5},
         {header: 'Q21', key: 'q21marks', width: 5},
+        {header: 'Q22', key: 'q22marks', width: 5},
         {header:'Total',key:'total',width:10}
     ]
     

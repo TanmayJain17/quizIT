@@ -114,6 +114,11 @@
       "question": "I have leadership qualities?",
       "choices":  ["Agree", "Disagree"],
       "answer": "Agree"
+    },
+    {
+      "question": "I strive to do the best I can ?",
+      "choices":  ["Agree", "Disagree"],
+      "answer": "Agree"
     }
   ]
 }

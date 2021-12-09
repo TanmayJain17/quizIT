@@ -147,6 +147,10 @@ scoreSheet.init({
         type:DataTypes.INTEGER,
         allowNull: false
     },
+    q22marks:{
+        type:DataTypes.INTEGER,
+        allowNull: false
+    },
     total:{
         type:DataTypes.INTEGER,
         allowNull: false

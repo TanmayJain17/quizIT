@@ -3,7 +3,7 @@ const ExcelJS = require('exceljs')
 const {theScores} = require('../../controller/findScore')
 const {createScoreSheet} = require('../../controller/createScore')
 
-const answers=['Agree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Disagree','Disagree','Agree','Disagree','Agree','Agree','Disagree','Agree','Agree', 'Disagree','Disagree','Agree','Agree','Agree']
+const answers=['Agree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Disagree','Disagree','Agree','Disagree','Agree','Agree','Disagree','Agree','Agree', 'Disagree','Disagree','Agree','Agree','Agree','Agree']
 
 route.post('/',async (req, res)=>{
     //const {data} = req.body
@@ -17,7 +17,7 @@ route.post('/',async (req, res)=>{
     var totalScore=0;
     let marks=[]
 
-    for(let i=0;i<21;i++){
+    for(let i=0;i<22;i++){
         if(arr[i].a===answers[i]){
             marks.push(1)
             totalScore=totalScore+1;

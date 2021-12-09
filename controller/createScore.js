@@ -32,7 +32,7 @@ async function createScoreSheet(arrMarks,totalMarks,id){
         q19marks:arrMarks[18],
         q20marks:arrMarks[19],
         q21marks:arrMarks[20],
-        
+        q22marks:arrMarks[21],
         total:totalMarks
     })
     return theSheet
