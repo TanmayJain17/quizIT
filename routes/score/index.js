@@ -3,7 +3,7 @@ const ExcelJS = require('exceljs')
 const {theScores} = require('../../controller/findScore')
 const {createScoreSheet} = require('../../controller/createScore')
 
-const answers=['Agree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Disagree','Disagree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Disagree','Disagree','Agree','Disagree','Agree','Disagree','Disagree','Agree','Disagree','Agree','Agree','Agree','Agree']
+const answers=['Agree','Agree','Disagree','Agree','Disagree','Agree','Disagree','Disagree','Disagree','Agree','Disagree','Agree','Agree','Disagree','Agree','Agree', 'Disagree','Disagree','Agree','Agree','Agree']
 
 route.post('/',async (req, res)=>{
     //const {data} = req.body
@@ -17,7 +17,7 @@ route.post('/',async (req, res)=>{
     var totalScore=0;
     let marks=[]
 
-    for(let i=0;i<32;i++){
+    for(let i=0;i<21;i++){
         if(arr[i].a===answers[i]){
             marks.push(1)
             totalScore=totalScore+1;
@@ -85,7 +85,12 @@ route.post('/',async (req, res)=>{
     console.log(totalScore)
 
     const theScore = createScoreSheet(marks,totalScore,id)
-    res.status(201).send({message:"Your results were saved successfully"})
+    if(totalScore>=5){
+        res.status(201).send({message:"You are in direction and good fit to become Business Analyst!"})
+    }
+    else{
+        res.status(201).send({message:"Thank you for taking the test!"}) 
+    }
     //res.status(201).redirect('/findall')
     //res.status(201).send('ok')
 })

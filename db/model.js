@@ -14,6 +14,10 @@ candidates.init({
         type: DataTypes.STRING,
         allowNull: false
     },
+    phone: {
+        type: DataTypes.STRING(12),
+        allowNull: false
+    },
     
     email: {
         type: DataTypes.STRING(100),
@@ -27,6 +31,10 @@ scoreSheet.init({
     /* id:COL_ID_DEF, */
     name: {
         type: DataTypes.STRING,
+        allowNull: false
+    },
+    phone: {
+        type: DataTypes.STRING(12),
         allowNull: false
     },
     
@@ -136,61 +144,6 @@ scoreSheet.init({
     },
     
     q21marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q22marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q23marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q24marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q25marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q26marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q27marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q28marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q29marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q30marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q31marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q32marks:{
         type:DataTypes.INTEGER,
         allowNull: false
     },

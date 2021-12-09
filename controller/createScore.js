@@ -10,6 +10,7 @@ async function createScoreSheet(arrMarks,totalMarks,id){
     const theSheet = await scoreSheet.create({
         name:theCan.dataValues.name,
         email:theCan.dataValues.email,
+        phone:theCan.dataValues.phone,
         q1marks:arrMarks[0],
         q2marks:arrMarks[1],
         q3marks:arrMarks[2],
@@ -31,17 +32,7 @@ async function createScoreSheet(arrMarks,totalMarks,id){
         q19marks:arrMarks[18],
         q20marks:arrMarks[19],
         q21marks:arrMarks[20],
-        q22marks:arrMarks[21],
-        q23marks:arrMarks[22],
-        q24marks:arrMarks[23],
-        q25marks:arrMarks[24],
-        q26marks:arrMarks[25],
-        q27marks:arrMarks[26],
-        q28marks:arrMarks[27],
-        q29marks:arrMarks[28],
-        q30marks:arrMarks[29],
-        q31marks:arrMarks[30],
-        q32marks:arrMarks[31],
+        
         total:totalMarks
     })
     return theSheet

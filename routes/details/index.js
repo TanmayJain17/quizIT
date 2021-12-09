@@ -3,13 +3,14 @@ const {createCandidate} = require('../../controller/enterCandidate')
 
 route.post('/',async (req, res) => {
     const {data} = req.body
-    if(data.theName===' '||data.emailId===' '){
+    //let num = parseInt(data.thePhone)
+    if(data.theName===' '||data.emailId===' '||data.thePhone==='0987654321'){
         res.status(200).send({
             message:'Need all details to proceed '
         })
     }
     else{
-        const theCandidate =await createCandidate(data.theName,data.emailId)
+        const theCandidate =await createCandidate(data.theName,data.thePhone,data.emailId)
         console.log(theCandidate)
         res.status(201).send({id:theCandidate})
     }

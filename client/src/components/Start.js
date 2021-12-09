@@ -7,6 +7,7 @@ import axios from "axios"
 const Start = ({ onQuizStart }) => {
   const [name,setName]=useState(' ')
   const [email,setEmail]=useState(' ')
+  const [phone,setPhone]=useState('0987654321')
   const [newuser,setNewuser] = useState({})
 
   
@@ -16,6 +17,7 @@ const Start = ({ onQuizStart }) => {
       const data = {
           
           theName: name,
+          thePhone:phone,
           emailId: email,
           
       }
@@ -51,6 +53,15 @@ const Start = ({ onQuizStart }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
+          <TextField
+            style={{ marginBottom: 25 }}
+            label="Enter Your Phone No."
+            variant="outlined"
+            autoComplete="off"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            
+          />
            <TextField
             style={{ marginBottom: 25 }}
             label="Enter Your Email ID"
@@ -70,7 +81,7 @@ const Start = ({ onQuizStart }) => {
           <h1>Start the quiz</h1>
           <p>Good luck!</p>
           
-          <button className="button is-info is-large" onClick={onQuizStart}>Start</button>
+          <button className="button is-info is-large" onClick={onQuizStart}>Predictability Test</button>
         </div>
       </div>
     </div>

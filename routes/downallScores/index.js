@@ -21,6 +21,7 @@ route.get('/', async (req, res)=>{
         { header: 'Id', key: 'id', width: 2 },
         {header: 'Name', key: 'name', width: 25},
         {header: 'EmailId', key: 'email', width: 45},
+        {header: 'Phone No.', key: 'phone', width: 25},
         {header: 'Q1', key: 'q1marks', width: 5},
         {header: 'Q2', key: 'q2marks', width: 5},
         {header: 'Q3', key: 'q3marks', width: 5},
@@ -42,17 +43,6 @@ route.get('/', async (req, res)=>{
         {header: 'Q19', key: 'q19marks', width: 5},
         {header: 'Q20', key: 'q20marks', width: 5},
         {header: 'Q21', key: 'q21marks', width: 5},
-        {header: 'Q22', key: 'q22marks', width: 5},
-        {header: 'Q23', key: 'q23marks', width: 5},
-        {header: 'Q24', key: 'q24marks', width: 5},
-        {header: 'Q25', key: 'q25marks', width: 5},
-        {header: 'Q26', key: 'q26marks', width: 5},
-        {header: 'Q27', key: 'q27marks', width: 5},
-        {header: 'Q28', key: 'q28marks', width: 5},
-        {header: 'Q29', key: 'q29marks', width: 5},
-        {header: 'Q30', key: 'q30marks', width: 5},
-        {header: 'Q31', key: 'q31marks', width: 5},
-        {header: 'Q32', key: 'q32marks', width: 5},
         {header:'Total',key:'total',width:10}
     ]
     
