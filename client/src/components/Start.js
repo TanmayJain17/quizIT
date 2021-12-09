@@ -7,7 +7,7 @@ import axios from "axios"
 const Start = ({ onQuizStart }) => {
   const [name,setName]=useState(' ')
   const [email,setEmail]=useState(' ')
-  const [phone,setPhone]=useState('0987654321')
+  const [phone,setPhone]=useState(' ')
   const [newuser,setNewuser] = useState({})
 
   
@@ -78,10 +78,10 @@ const Start = ({ onQuizStart }) => {
                     />
           <button className="button is-success is-medium" onClick={onSubmit}>Submit</button>
        
-          <h1>Start the quiz</h1>
+          <h1>Predictability Test</h1>
           <p>Good luck!</p>
           
-          <button className="button is-info is-large" onClick={onQuizStart}>Predictability Test</button>
+          <button className="button is-info is-large" onClick={onQuizStart}>Start</button>
         </div>
       </div>
     </div>
