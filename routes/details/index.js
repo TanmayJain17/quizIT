@@ -5,8 +5,8 @@ const { check, validationResult } = require('express-validator');
 route.post('/' ,[
     check('theEmail', 'Enter Correct Email')
                     .isEmail().isLength({ min: 5, max: 30 }),
-    check('theName', 'Name length should be minimum 3 characters')
-                    .isLength({ min: 3, max: 70 }),
+    check('theName', 'Name length should be min 3 characters & use alphabets only')
+                    .isAlpha().isLength({ min: 3, max: 70 }),
     check('thePhone', 'Mobile number should contains 10 digits')
                     .isLength({ min: 10, max: 10 }),
     
