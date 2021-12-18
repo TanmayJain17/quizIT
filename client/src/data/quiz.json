@@ -49,76 +49,7 @@
       "question": "I am ambitious ?",
       "choices":  ["Agree", "Disagree"],
       "answer": "Agree"
-    },
-    {
-      "question": "It's better to get a job done than aim for perfection ?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Disagree"
-    },
-    {
-      "question": "I am able to complete tasks as well as, or better than other people ?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    
-    
-    {
-      "question": "I am confident in my abilities to complete difficult tasks at work ?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    {
-      "question": "I am happy to make speeches in public ?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Disagree"
-    },
-    {
-      "question": "It is very important for me to achieve my goals ?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    
-    
-    
-    {
-      "question": "I approach life in an easy-going manner?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    {
-      "question": "I tend to take on other people’s problems?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Disagree"
-    },
-    
-    
-    
-    
-    {
-      "question": "Changes in my work makes me feel uncomfortable?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Disagree"
-    },
-    {
-      "question": "I almost cross deadline of work when there is work pressure?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    {
-      "question": "I am keen or specific about time management?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    
-    {
-      "question": "I have leadership qualities?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
-    },
-    {
-      "question": "I strive to do the best I can ?",
-      "choices":  ["Agree", "Disagree"],
-      "answer": "Agree"
     }
+    
   ]
 }

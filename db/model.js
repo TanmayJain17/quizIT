@@ -92,65 +92,6 @@ scoreSheet.init({
         type:DataTypes.INTEGER,
         allowNull: false
     },
-    
-    q11marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q12marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q13marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q14marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q15marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q16marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q17marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q18marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q19marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q20marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    
-    q21marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
-    q22marks:{
-        type:DataTypes.INTEGER,
-        allowNull: false
-    },
     total:{
         type:DataTypes.INTEGER,
         allowNull: false

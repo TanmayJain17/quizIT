@@ -35,7 +35,7 @@ app.use('/score',scoreRoute)
 }) */
 
 
-db.sync()
+db.sync({force:true})
 .then(()=>{
     app.listen(PORT,()=>{
         console.log(`'server started on http://localhost:${PORT}`)

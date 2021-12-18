@@ -39,7 +39,7 @@ const id = sessionStorage.getItem('userId')
           <p>{correctAnswers} of {data.length}</p>
           {/* <p><strong>{Math.floor((correctAnswers / data.length) * 100)}%</strong></p> */}
           {/* <p><strong>Your time:</strong> {formatTime(time)}</p> */}
-          <button className="button is-info mr-2" onClick={onAnswersCheck}>Check your answers</button>
+          {/* <button className="button is-info mr-2" onClick={onAnswersCheck}>Check your answers</button> */}
           {/* <button className="button is-success" onClick={onReset}>Try again</button> */}
           <button className="button is-success" onClick={onSubmit}>Submit</button>
           <Button

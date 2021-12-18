@@ -32,18 +32,7 @@ route.get('/', async (req, res)=>{
         {header: 'Q8', key: 'q8marks', width: 5},
         {header: 'Q9', key: 'q9marks', width: 5},
         {header: 'Q10', key: 'q10marks', width: 5},
-        {header: 'Q11', key: 'q11marks', width: 5},
-        {header: 'Q12', key: 'q12marks', width: 5},
-        {header: 'Q13', key: 'q13marks', width: 5},
-        {header: 'Q14', key: 'q14marks', width: 5},
-        {header: 'Q15', key: 'q15marks', width: 5},
-        {header: 'Q16', key: 'q16marks', width: 5},
-        {header: 'Q17', key: 'q17marks', width: 5},
-        {header: 'Q18', key: 'q18marks', width: 5},
-        {header: 'Q19', key: 'q19marks', width: 5},
-        {header: 'Q20', key: 'q20marks', width: 5},
-        {header: 'Q21', key: 'q21marks', width: 5},
-        {header: 'Q22', key: 'q22marks', width: 5},
+        
         {header:'Total',key:'total',width:10}
     ]
     

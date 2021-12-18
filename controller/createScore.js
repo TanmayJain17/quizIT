@@ -21,18 +21,7 @@ async function createScoreSheet(arrMarks,totalMarks,id){
         q8marks:arrMarks[7],
         q9marks:arrMarks[8],
         q10marks:arrMarks[9],
-        q11marks:arrMarks[10],
-        q12marks:arrMarks[11],
-        q13marks:arrMarks[12],
-        q14marks:arrMarks[13],
-        q15marks:arrMarks[14],
-        q16marks:arrMarks[15],
-        q17marks:arrMarks[16],
-        q18marks:arrMarks[17],
-        q19marks:arrMarks[18],
-        q20marks:arrMarks[19],
-        q21marks:arrMarks[20],
-        q22marks:arrMarks[21],
+        
         total:totalMarks
     })
     return theSheet
