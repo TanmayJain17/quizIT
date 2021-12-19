@@ -5,7 +5,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
 
-  useEffect(() => {
+  useEffect(() => { 
     const findCheckedInput = radiosWrapper.current.querySelector('input:checked');
     if(findCheckedInput) {
       findCheckedInput.checked = false;
