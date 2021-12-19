@@ -35,22 +35,28 @@ const id = sessionStorage.getItem('userId')
     <div className="card">
       <div className="card-content">
         <div className="content">
-          <h3>Your results</h3>
-          <p>{correctAnswers} of {data.length}</p>
+          <h1 className="letg">Your Result</h1>
+          <p className="letc">{correctAnswers} of {data.length}</p>
           {/* <p><strong>{Math.floor((correctAnswers / data.length) * 100)}%</strong></p> */}
           {/* <p><strong>Your time:</strong> {formatTime(time)}</p> */}
           {/* <button className="button is-info mr-2" onClick={onAnswersCheck}>Check your answers</button> */}
           {/* <button className="button is-success" onClick={onReset}>Try again</button> */}
-          <button className="button is-success" onClick={onSubmit}>Submit</button>
+          <Button 
+          variant="contained"
+          color="secondary"
+         // size="large"
+          tyle={{ alignSelf: "left", marginbottom: 1}}
+          className="button is-success  is-medium" onClick={onSubmit}>Submit</Button>
           <Button
+          className="button is-info is-large"
         variant="contained"
         color="secondary"
         size="large"
-        style={{ alignSelf: "center", marginTop: 20 }}
+        style={{ alignSelf: "center", marginTop: 7 }}
         onClick={clearStorage}
         href="/"
       >
-        Go to homepage
+        Go To Homepage
       </Button>
         </div>
       </div>
