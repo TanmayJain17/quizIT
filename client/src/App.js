@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import Start from './components/Start';
 import Question from './components/Question';
 import End from './components/End';
@@ -14,21 +15,23 @@ const App = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showModal, setShowModal] = useState(false);
- // const [time, setTime] = useState(0);
+  // const [time, setTime] = useState(0);
 
   useEffect(() => {
-    if(step === 3) {
+    if (step === 3) {
       clearInterval(interval);
     }
   }, [step]);
 
   const quizStartHandler = () => {
-    if(!sessionStorage.getItem('userId')){
-      window.alert('please enter details first')
-      window.location='/'
+    if (!sessionStorage.getItem('userId')) {
+
+      /*  window.alert('please enter details first') */
+      toast.info("Please enter details first");
+      /* window.location='/' */
     }
-    else{
-    setStep(2);
+    else {
+      setStep(2);
     }
     // interval = setInterval(() => {
     //   setTime(prevTime => prevTime + 1);
@@ -47,8 +50,19 @@ const App = () => {
 
   return (
     <div className="App">
+      <ToastContainer
+        position="top-center"
+        autoClose={1575}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       {step === 1 && <Start onQuizStart={quizStartHandler} />}
-      {step === 2 && <Question 
+      {step === 2 && <Question
         data={quizData.data[activeQuestion]}
         onAnswerUpdate={setAnswers}
         numberOfQuestions={quizData.data.length}
@@ -56,15 +70,15 @@ const App = () => {
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
       />}
-      {step === 3 && <End 
+      {step === 3 && <End
         results={answers}
         data={quizData.data}
         onReset={resetClickHandler}
         onAnswersCheck={() => setShowModal(true)}
-       // time={time}
+      // time={time}
       />}
 
-      {showModal && <Modal 
+      {showModal && <Modal
         onClose={() => setShowModal(false)}
         results={answers}
         data={quizData.data}

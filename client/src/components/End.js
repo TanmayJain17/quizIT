@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from "@material-ui/core";
 import axios from 'axios';
+/* import { ToastContainer, toast } from 'react-toastify'; */
 
 /* import { formatTime } from '../utils'; */
 
@@ -26,10 +27,11 @@ const id = sessionStorage.getItem('userId')
         .then((response) => {
             console.log(response)
             window.alert(response.data.message)
+            /* toast.success("Wow so easy !"); */
             sessionStorage.removeItem('userId')
             window.location='/'
         });
-}
+} 
 
   return(
     <div className="card">

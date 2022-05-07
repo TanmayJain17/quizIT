@@ -28,8 +28,8 @@ app.use('/score',scoreRoute)
 
 /* app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/client/public/index.html'));
-  });
- */
+  }); */
+
 /* app.get('/',(req, res)=>{
     res.send('ok it is working')
 }) */
