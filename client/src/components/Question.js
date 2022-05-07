@@ -5,34 +5,34 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
 
-  useEffect(() => { 
+  useEffect(() => {
     const findCheckedInput = radiosWrapper.current.querySelector('input:checked');
-    if(findCheckedInput) {
+    if (findCheckedInput) {
       findCheckedInput.checked = false;
     }
   }, [data]);
 
   const changeHandler = (e) => {
     setSelected(e.target.value);
-    if(error) {
+    if (error) {
       setError('');
     }
   }
-  
+
   const nextClickHandler = (e) => {
-    if(selected === '') {
+    if (selected === '') {
       return setError('Please select one option!');
     }
     onAnswerUpdate(prevState => [...prevState, { q: data.question, a: selected }]);
     setSelected('');
-    if(activeQuestion < numberOfQuestions - 1) {
+    if (activeQuestion < numberOfQuestions - 1) {
       onSetActiveQuestion(activeQuestion + 1);
-    }else {
+    } else {
       onSetStep(3);
     }
   }
 
-  return(
+  return (
     <div className="card">
       <div className="card-content">
         <div className="content">

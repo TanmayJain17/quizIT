@@ -1,33 +1,13 @@
 import React, { useState } from 'react';
 import { TextField } from "@material-ui/core";
 import { Button } from "@material-ui/core";
-/* import Checkbox from '@material-ui/core/Checkbox';
-import FormControlLabel from '@material-ui/core/FormControlLabel'; */
+
 import axios from "axios"
 
 const Start = ({ onQuizStart }) => {
-  /* const [names,setNames]=useState("")
-  const [email,setEmail]=useState("")
-  const [phone,setPhone]=useState(0) */
+
   const initialValues = { theEmail: "", theName: "", thePhone: "" };
   const [formValues, setFromValues] = useState(initialValues);
-  /* const [newuser,setNewuser] = useState({}) */
-
-
-
-  /* const updateData = (e) => {
-    
-    const data = {
-        
-        theName: name,
-        thePhone:phone,
-        emailId: email,
-        
-    }
-    setNewuser({ data })
-
-
-} */
 
   const handleChangeName = (e) => {
 
@@ -96,11 +76,7 @@ const Start = ({ onQuizStart }) => {
             onChange={(e) => { handleChangeEmail(e) }}
 
           />
-          {/* <FormControlLabel
-                        control={<Checkbox name="checkedA" />}
-                        onClick={updateData}
-                        label="I accept the terms and conditions."
-                    /> */}
+
           <br></br>
           <Button className="button is-success is-medium" onClick={onSubmit}>Submit</Button>
 

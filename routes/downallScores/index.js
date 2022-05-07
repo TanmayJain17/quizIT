@@ -36,9 +36,7 @@ route.get('/', async (req, res)=>{
         {header:'Total',key:'total',width:10}
     ]
     
-        //worksheet.columns.push({header: `Q${k+1}`, key: `q${k+1}`, width: 5})
-    
-    //worksheet.columns.push({header:'Total',key:'total',width:15})
+        
 
     for(let t=0;t<scores.length;t++){
         
@@ -51,12 +49,16 @@ route.get('/', async (req, res)=>{
     
         
     const score =await workbook.xlsx.writeFile('scores.xlsx')
+    console.log('score',score)
     const options = {
         root:path.join('./')
     }
+    setTimeout(()=>{
+        res.sendFile('scores.xlsx',options)
+    },3000)
     //console.log(scores[0].dataValues)
-    res.sendFile('scores.xlsx',options)
-    /* const paths = `${path}/${scores.slsx}` */
-    //res.send('ok')
+    
+    
+    
 })
 module.exports=route
