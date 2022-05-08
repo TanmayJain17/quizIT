@@ -8,19 +8,6 @@
 **Home Page**
 
 
-![Home Page](https://github.com/TanmayJain17/quizIT/blob/main/images_quizit/Screenshot%20(273).png)
-**Quiz Interface**
-
-
-![Home Page](https://github.com/TanmayJain17/quizIT/blob/main/images_quizit/Screenshot%20(274).png)
-**Result/Analysis Screen**
-
-
-![Home Page](https://github.com/TanmayJain17/quizIT/blob/main/images_quizit/Screenshot%20(275).png)
-**Final Excell Sheet Download**
-
-
-
 ***
 ## Project Structure
 ***
@@ -73,6 +60,11 @@ public
 └───js
         jquery-3.6.0.js
 ```
+
+![Home Page](https://github.com/TanmayJain17/quizIT/blob/main/images_quizit/Screenshot%20(273).png)
+**Quiz Interface**
+
+
 ## Business Logic
 ***
 ### Users
@@ -85,6 +77,14 @@ After that the Quiz/Analysis Form is generated which the user has to share.
 
 - **The Examinee**
 This User will have to enter the Poll Id and enter the live poll.
+
+
+![Home Page](https://github.com/TanmayJain17/quizIT/blob/main/images_quizit/Screenshot%20(274).png)
+**Result/Analysis Screen**
+
+
+![Home Page](https://github.com/TanmayJain17/quizIT/blob/main/images_quizit/Screenshot%20(275).png)
+**Final Excell Sheet Download**
 
 ## API Documentation
 ***
